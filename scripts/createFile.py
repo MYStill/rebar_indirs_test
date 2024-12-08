@@ -8,7 +8,7 @@ def createFile(fileName, path):
 -export([aa/0,bb/0]).
 aa() -> a.
 bb() -> b.""")
-  
+os.mkdir(srcPath)
 for i in ["a","b","c","d"]:
   createDir(i, srcPath)
   createFile(i, srcPath)
